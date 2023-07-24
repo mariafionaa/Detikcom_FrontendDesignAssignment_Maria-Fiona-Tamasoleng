@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="assets/styles/regist.css">
+    <script src="https://kit.fontawesome.com/7f27f07f2b.js" crossorigin="anonymous"></script>
+</head>
+
+<body style="background-image: url(assets/img/bg-header-title.png);">
+<!--contain header and navigation-->
+<header>
+    <ul class="topnav">
+        <li class="left"><a href="index.html"><img src="assets/img/logo.png" alt="dbpc_logo"></a></li>
+        <ul class="right">
+            <li><button>Register</button></li>
+            <li><a href="#latest-update">Latest Update</a></li>
+            <li><a href="#mechanism">Mechanism</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </ul>
+</header>
+
+<section>
+    <h1>Registrasi</h1>
+
+    <form>
+        <div>
+            <input type="text"name="company_name" placeholder="Nama Perusahaan" >
+        </div>
+
+        <div>
+            <input type="email" name="email" placeholder="Email" >
+        </div>
+
+        <div>
+            <input type="text" name="phone" placeholder="Nomor Telepon" >
+        </div>
+        <p>Isi hanya angka</p>
+
+        <div>
+            <textarea name="about_company" placeholder="Tentang Perusahaan (Max. 200 character)"></textarea>
+        </div>
+        
+        <div class="logo_file">
+            <div class="input-logo">
+                <input id="fileid" type="file" hidden accept="file_extension|image/*|.png, .jpg, .jpeg" style="display: none;" >
+                <button id="btnid"><i class="fas fa-plus"></i></button>
+                <p>Upload file logo</p>
+            </div>
+            <div>
+                <ol>
+                    <li>Format file: .png, .jpg, .jpeg</li>
+                    <li>Maksimal ukuran file 200kB</li>
+                    <li>Hindari penggunaan logo berwarna putih</li>
+                    <li>Minimal lebar 300px</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="company_profile">
+            <input type="text" placeholder="Profil Perusahaan atau Deck (opsional)">
+            <button type="submit" name="Submit">Upload File</button>
+        </div>
+        <p>Format file pdf, maksimal size 20mb</p>
+
+        <div>
+            <input type="url" name="website" placeholder="Link website" >
+        </div>
+        <p>Website, Social Media, dll. Sertakan protokol URL (https:// atau http://)</p>
+
+        <div class="checkbox">
+            <input type="checkbox">
+            <label>Dengan menekan tombol "Daftar", Saya menyetujui syarat dan ketentuan yang berlaku</label>
+        </div>
+        
+        <div class="regist-btn">
+            <button type="submit" name="Submit">Register</button>
+        </div>
+    </form>
+</section>
+
+<footer>
+    <img src="assets/img/logo.png">
+    
+    <div>
+        <div class="foot-left">
+            <h5>
+                Detikfinance memberikan ruang kepada para startup di Indonesia untuk menunjukkan, serta<br>
+                mempromosikan brand mereka untuk mendapatkan perhatian dari venture capital atau angel investor
+            </h5>
+        </div>
+        
+        <div class="foot-right">
+            <i class="fab fa-twitter"></i> &nbsp
+            <i class="fab fa-instagram"></i> &nbsp
+            <i class="fab fa-facebook"></i>
+        </div>
+    </div>
+
+    <hr>
+
+    <p>&#169 2023 Detikcom All rights reserved</p>
+</footer>
+
+<script>
+    function setup() {
+        document.getElementById('btnid').addEventListener('click', openDialog);
+        function openDialog() {
+            document.getElementById('fileid').click();
+        }
+        document.getElementById('btnid').addEventListener('change', submitForm);
+        function submitForm() {
+            document.getElementById('formid').submit();
+        }
+    }
+</script>
+
+</body>
+</html>
