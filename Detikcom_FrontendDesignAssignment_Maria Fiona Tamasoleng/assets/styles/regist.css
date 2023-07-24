@@ -1,0 +1,237 @@
+/* Set body's font-family and size */
+body {
+    font-family: Verdana, sans-serif;
+    line-height: 1.5;
+    background-color: #f4fbff;
+    min-height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/* Hide scrollbar, but maintain its function for Chrome, Safari, Opera*/
+body::-webkit-scrollbar {display: none;}
+/* for IE and Edge, Firefox*/
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* HEADER SECTION */
+/* navigation bar */
+/* navigation bar */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #007CBD;
+}
+
+ul.right li {
+    float: right;
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    padding-right: 50px;
+} 
+
+ul.right li a {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+ul.right li button {
+    background-color: white;
+    color: #007CBD;
+    font-weight: bold;
+    margin: auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    ul.topnav li.logo-left, ul.topnav li {float: none;}    
+}
+
+/* logo styling */
+ul.topnav li.left {float: left;}
+
+ul.topnav li.left img {
+    width: 230px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 100px;
+}
+
+/* FORM SECTION */
+section {padding: 100px;}
+
+form {
+    background-color: white;
+    padding: 20px;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+form > div {
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+input[type=text], [type=email], [type=url] {
+    background-color: #f8f8f8;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+}
+
+textarea {
+    background-color: #f8f8f8;
+    font-size: 12px;
+    font-family: Verdana, sans-serif;
+    width: 99%;
+    height: 150px;
+    border: none;
+    border-radius: 4px;
+    resize: none;
+}
+
+form p {
+    font-size: 12px;
+    color: gray;
+    margin: 5px;
+}
+
+label, li {font-size: 12px;}
+
+/* company logo styling */
+.logo_file {
+    display: flex;
+    flex-direction: column nowrap;
+    box-sizing: border-box;
+}
+
+.logo_file ol {padding: 90px 30px;}
+
+.input-logo {
+    background-color: #f8f8f8;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    border: none;
+    border-radius: 4px;
+}
+
+#btnid {
+    background-color: #007CBD;
+    color: white;
+    width: 20%;
+    height: 20%;
+    margin-top: 130px;
+    margin-bottom: 70px;
+    border: 1px solid #007CBD;
+    border-radius: 100%;
+}
+
+#btnid i {font-size: 24px;}
+
+/* company profile styling */
+.company_profile {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+}
+
+.company_profile input {
+    flex-grow: 2;
+    border: none;
+}
+
+.company_profile input:focus {outline: none;}
+.company_profile:focus-within {outline: 2px solid black;}
+
+.company_profile button {
+    background-color: #007CBD;
+    color: white;
+    width: 30%;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* registration button styling */
+.regist-btn {text-align: center;}
+
+.regist-btn button {
+    background-color: #007CBD;
+    color: white;
+    width: 30%;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+}
+
+/* FOOTER SECTION */
+footer {
+    background-color: #007CBD;
+    color: white;
+    padding: 40px;
+    padding-top: 20px;
+}
+
+footer img {
+    width: 18%;
+    height: auto;
+    margin: 0.5%;
+}
+
+footer > div {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.foot-left, .foot-right {
+    width: 100%;
+}
+
+.foot-right {
+    text-align: right;
+    font-size: 24px;
+}
+
+hr {color: white;}
+
+footer h5 {font-weight: lighter;}
+
+footer p {
+    font-size: small;
+    font-weight: 100;
+    margin-top: 20px;
+}
